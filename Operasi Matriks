@@ -1,0 +1,16 @@
+public class OperasiMatriks ( Mendeklarasikan kelas OperasiMatriks.)
+public static void main(String[] args) ( Method utama yang akan dieksekusi saat program berjalan.)
+int[][] matriksA dan int[][] matriksB ( Mendeklarasikan dua matriks berukuran 2×3 (2 baris, 3 kolom).)
+int[][] hasil = new int[2][3]; (Membuat array hasil untuk menyimpan hasil penjumlahan, dengan ukuran 2×3.)
+for (int i = 0; i < matriksA.length; i++) {
+    for (int j = 0; j < matriksA[0].length; j++) {
+        hasil[i][j] = matriksA[i][j] + matriksB[i][j];
+    }
+}
+(i → Mengakses baris matriks (0 hingga 1).
+j → Mengakses kolom matriks (0 hingga 2).
+hasil[i][j] = matriksA[i][j] + matriksB[i][j] → Menjumlahkan elemen matriks A dan B sesuai indeks.)
+for (int[] baris : hasil) ( Iterasi setiap baris dalam matriks hasil.)
+for (int nilai : baris) ( Iterasi setiap nilai dalam baris.)
+System.out.print(nilai + " "); ( Menampilkan nilai dalam satu baris.)
+System.out.println(); ( Pindah ke baris berikutnya.)
