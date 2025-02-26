@@ -1,0 +1,14 @@
+public class LatihanArray1 { ( Mendeklarasikan kelas bernama LatihanArray1)
+    public static void main(String[] args) { ( Method utama yang menjadi titik awal eksekusi program )
+      int[] bilanganGenap = new int[10]; ( Mendeklarasikan array bilanganGenap yang berisi 10 elemen bertipe integer)
+      int jumlah = 0; ( Variabel jumlah untuk menyimpan hasil penjumlahan seluruh elemen array.)
+      for (int i = 0; i < bilanganGenap.length; i++)( Perulangan for digunakan untuk mengisi array dari indeks 0 hingga 9.)
+        bilanganGenap[i] = (i + 1) * 2;( Setiap elemen array diisi dengan bilangan genap, mulai dari 2.)
+        System.out.println("Isi array:");( Mencetak teks "Isi array:" di layar.)
+      for (int bilangan : bilanganGenap)( Perulangan for-each digunakan untuk menampilkan setiap elemen dalam array.)
+        System.out.print(bilangan + " ");( Menampilkan setiap bilangan dalam array di satu baris.)
+        jumlah += bilangan;( Menambahkan nilai bilangan ke dalam variabel jumlah.)
+        \n ( Menambahkan baris baru agar tampilan lebih rapi.)
+        "Jumlah semua elemen: " + jumlah( Mencetak hasil penjumlahan semua elemen dalam array.)
+
+
