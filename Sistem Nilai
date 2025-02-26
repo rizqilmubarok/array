@@ -1,0 +1,22 @@
+public class SistemNilai ( Mendeklarasikan kelas SistemNilai.)
+public static void main(String[] args) ( Method utama yang akan dieksekusi saat program berjalan.)
+String[] namaSiswa ( Array yang menyimpan nama siswa.)
+int[][] nilai (Array 2D untuk menyimpan nilai siswa dalam 3 mata pelajaran.)
+  -Setiap baris mewakili satu siswa.
+  -Setiap kolom mewakili nilai untuk satu mata pelajaran.
+String[] mapel ( Array yang menyimpan nama mata pelajaran.)
+Perulangan pertama (for):
+  -i menelusuri baris pada array nilai, yang mewakili setiap siswa.
+Perulangan kedua (for-each):
+  -Menghitung total nilai dari masing-masing siswa.
+Menghitung rata-rata:
+  -double rataSiswa = total / nilai[i].length;
+System.out.printf(). (Menampilkan hasil dalam format dua desimal menggunakan )
+
+Perulangan pertama (for):
+  -j menelusuri kolom dalam array nilai, mewakili setiap mata pelajaran.
+Perulangan kedua (for):
+  -i menelusuri baris, menjumlahkan nilai dari seluruh siswa untuk mata pelajaran tertentu.
+Menghitung rata-rata:
+  -double rataMapel = total / nilai.length;
+System.out.printf(). (Menampilkan hasil dengan format dua desimal.)
