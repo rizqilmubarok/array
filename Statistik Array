@@ -1,0 +1,18 @@
+public class StatistikArray ( Mendeklarasikan kelas StatistikArray.)
+public static void main(String[] args) ( Method utama yang akan dieksekusi saat program berjalan.)
+int[] nilai ( Array yang menyimpan nilai siswa.)
+{75, 80, 65, 90, 85, 70, 95, 88} ( Elemen-elemen array yang berisi nilai siswa.)
+tertinggi = nilai[0] ( Menyimpan nilai tertinggi, dimulai dari elemen pertama.)
+terendah = nilai[0] ( Menyimpan nilai terendah, dimulai dari elemen pertama.)
+total = nilai[0] ( Menyimpan jumlah total nilai, dimulai dari elemen pertama.)
+Perulangan for:
+Dimulai dari indeks 1 (i = 1), karena indeks 0 sudah digunakan untuk inisialisasi.
+if (nilai[i] > tertinggi) tertinggi = nilai[i];( Jika nilai saat ini lebih besar dari tertinggi, maka diperbarui.)
+if (nilai[i] < terendah) terendah = nilai[i];( Jika nilai saat ini lebih kecil dari terendah, maka diperbarui.)
+total += nilai[i];( Menambahkan nilai saat ini ke dalam total.)
+(double) total ( Mengubah total menjadi tipe double agar hasil pembagian lebih akurat.)
+/ nilai.length ( Membagi total nilai dengan jumlah elemen dalam array.)
+System.out.println("Nilai tertinggi: " + tertinggi);
+System.out.println("Nilai terendah: " + terendah);
+System.out.println("Rata-rata: " + rataRata);
+(Mencetak nilai tertinggi, terendah, dan rata-rata.)
