@@ -1,0 +1,26 @@
+public class TicTacToe ( Mendeklarasikan kelas TicTacToe.)
+public static void main(String[] args) ( Method utama yang dieksekusi saat program berjalan.)
+char[][] papan ( Array 2D ukuran 3×3 yang merepresentasikan papan permainan Tic-Tac-Toe.)
+Perulangan for bersarang:
+i ( Mengakses baris (0 hingga 2).)
+j ( Mengakses kolom (0 hingga 2).)
+papan[i][j] = '-' ( Mengisi setiap posisi di papan dengan tanda '-'.)
+Mengisi beberapa posisi untuk mensimulasikan permainan:
+Pemain X mengisi (0,0) ( pojok kiri atas.)
+Pemain O mengisi (1,1) ( tengah.)
+Pemain X mengisi (2,2) ( pojok kanan bawah.)
+System.out.println("Status Papan:"); (Menampilkan teks "Status Papan:".)
+tampilkanPapan(papan); (Memanggil method tampilkanPapan(papan) untuk mencetak papan ke layar.)
+public static void tampilkanPapan(char[][] papan) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            System.out.print(papan[i][j] + " ");
+        }
+        System.out.println();
+    }
+}  
+(Method tampilkanPapan:
+  -Menggunakan perulangan for bersarang untuk mencetak isi papan.
+  -System.out.print(papan[i][j] + " "); ( Menampilkan elemen di papan.)
+  -System.out.println(); ( Pindah ke baris baru setelah mencetak satu baris papan.))
+
